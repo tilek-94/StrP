@@ -181,25 +181,6 @@ img {
   background-color: #106e88;
 }
 
-.title-bottom-line{
-  position: relative;
-  padding: 0 0 22px;
-  text-align: center;
-  font-size: 2.3em;
-  color: #444343;
-}
-
-.title-bottom-line:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin: 0 0 0 -32px;
-  content: '';
-  width: 73px;
-  height: 2px;
-  background: #414141;
-}
-
 /* global adjustment begin */
 @media screen and (max-width: 576px) {
   .announcements-block__inner{
@@ -529,7 +510,7 @@ img {
     padding-top: 10px;
   }
   .menu-second{
-    padding-top: 10px;
+    padding-top: 30px;
   }
   .navbar-brand {
     max-width: 150px;
@@ -537,6 +518,9 @@ img {
   .header__advert{
     text-align: center;
     margin-top: 20px;
+  }
+  .menu-second .header__advert{
+    padding-bottom: 20px;
   }
   /* .header__advert-usually{
     display: none; 
@@ -559,7 +543,6 @@ img {
   .header__advert-usually{
     width: 100%;
     text-align: center;
-    padding-top: 30px;
   }
   .menu-second .header__advert-usually{
     padding-bottom: 20px;
