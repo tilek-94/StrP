@@ -181,7 +181,57 @@ img {
   background-color: #106e88;
 }
 
+.badge {
+  color: #fff;
+  background: #7C4D9D;
+  font-size: .9em;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.badge:hover {
+  background: #008dd5;
+  color: #fff;
+}
+
+.badge-danger{
+  transition: .3s;
+  background-color: #dc3545;
+}
+
+.badge-danger:hover {
+  background: #008dd5 !important;
+  color: #fff;
+}
+
+.title-bottom-line{
+  text-align: center;
+  color: #444343;
+  padding-bottom: 20px;
+  font-size: 2.3em;
+  position: relative;
+}
+
+.title-bottom-line:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #414141;
+  width: 73px;
+  height: 2px;
+}
+
 /* global adjustment begin */
+@media screen and (max-width: 768px) {
+  .badge {
+    font-size: .9em;
+    padding: 20px 25px;
+  }
+}
 @media screen and (max-width: 576px) {
   .announcements-block__inner{
     max-width: 270px;
@@ -192,6 +242,9 @@ img {
   }
   .lines:before, .lines:after {
     width: 0;
+  }
+  .badge{
+    font-size: .7em;
   }
 }
 /* global adjustment end */
@@ -339,23 +392,6 @@ img {
 
 .header__advert-middle{
   display: none;
-}
-
-.header__advert .badge {
-  color: #fff;
-  background: #7C4D9D;
-  font-size: .9em;
-  padding: 15px 20px;
-  text-transform: uppercase;
-  transition: .3s;
-}
-
-.header__advert .badge-danger{
-  background-color: #dc3545;
-}
-
-.header__advert .badge:hover {
-  background: #008dd5;
 }
 
 .header-content {
@@ -535,10 +571,6 @@ img {
 @media screen and (max-width: 768px) {
   .navbar-brand {
     max-width: 120px;
-  }
-  .header__advert .badge {
-    font-size: 1.1em;
-    padding: 20px 25px;
   }
   .header__advert-usually{
     width: 100%;
@@ -743,3 +775,59 @@ img {
   margin-bottom: 15px;
 }
 /* last-announcements end */
+
+/* form-block begin */
+.form-block{
+  margin: 20px 0 80px 0;
+}
+
+.form-itself{
+  margin: 40px 0;
+  background: #fff;
+  box-shadow: 0 0 15px rgba(109, 109, 109, 0.2);
+  padding: 40px 70px;
+}
+
+.form-itself .form-control{
+  background: #F9F8F8;
+}
+
+.form-itself .form-group{
+  margin-bottom: 40px;
+} 
+
+.form-itself .badge{
+  text-transform: none;
+  width: 190px;
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.form-itself .text-helpers a{
+  font-size: 1em;
+  color: #7C4D9D;
+  display: block;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.form-itself .text-helpers a:hover{
+  text-decoration: underline;
+}
+
+.add-advert__select select{
+  cursor: pointer;
+}
+
+#formBlockSelectRight{
+  display: none;
+}
+
+/* form-block adjustment begin */
+@media screen and (max-width: 576px) {
+  .form-itself{
+    padding: 40px 30px;
+  }
+}
+/* form-block adjustment end */
+/* form-block end*/
