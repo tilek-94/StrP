@@ -54,3 +54,44 @@ $('.select').each(function() {
   });
 });
 /* select style end */
+
+
+// premium-announcements slider begin 
+$('#premium-announcements-slider').slick({
+  slidesToShow: 4,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  prevArrow: '<i class="fa fa-chevron-circle-left slick-slider-prev"></i>',
+  nextArrow: '<i class="fa fa-chevron-circle-right slick-slider-next"></i>',
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+// premium-announcements slider end 
+
+
+// show select begin
+let selectLeft = $('#formBlockSelectLeft').children("select");
+$(selectLeft).change(function() {
+  $('#formBlockSelectRight').css("display","block");
+});
+// let selectRight = $('#formBlockSelectRight').css("display","block");
+// show select end
