@@ -86,3 +86,12 @@ $('#premium-announcements-slider').slick({
   ]
 });
 // premium-announcements slider end 
+
+
+// show select begin
+let selectLeft = $('#formBlockSelectLeft').children("select");
+$(selectLeft).change(function() {
+  $('#formBlockSelectRight').css("display","block");
+});
+// let selectRight = $('#formBlockSelectRight').css("display","block");
+// show select end
