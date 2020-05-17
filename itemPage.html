@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Item page</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+        <div class="col-md-8 border-radius bboxshadow" id="question_div">
+            <div class="main" >
+		      <div class="sl">
+		        <div class="sl__slider m-3"><img src="img/1.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/2.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/3.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/4.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/5.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/6.jpg" class="sl__img"></div>
+		      </div>
+		      <div class="sl_nav">
+		        <div class="sl__slider m-3"><img src="img/1.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/2.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/3.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/4.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/5.jpg" class="sl__img"></div>
+		        <div class="sl__slider m-3"><img src="img/6.jpg" class="sl__img"></div>
+		      </div>
+		    </div>   
+        </div>
+
+        <div class="col-md-4 pr-3">
+        	
+            <nav class="navbar navbar-inverse p-0 m-0 border-radius"
+                 style="background-color: white; box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);">
+                <div class="container-fluid m-0 p-0">
+                    	<div class="container m-0">
+                    		<div class="row p-0">
+		                        <div class="col-md-4 m-0 p-3 text-center blogo" > <a href="#">Log</a></div>
+		                        <div class="col-md-8 m-0 p-3 text-center bLogoText"> <a href="#">Demo</a></div>
+	                        </div>
+	                        <div class="row pl-3 pt-3" class="col-md-1">style="background-color: #f0ffff">
+	                        	<div 
+	                        		<p class="p-0 m-0">
+	                        			1<br>
+	                        			2<br>
+	                        			3<br>
+	                        			4<br>
+	                        		</p>
+	                        	</div>
+	                        	<div class="col-md-10 p-0">
+	                        		<p>
+	                        			 Частное лицо <br>
+ 										 Телефон.: +791111111111<br>
+										 Регион: Владимирская область<br>
+										 Город: Владимир<br>
+	                        		</p>
+	                        	</div>
+	                        </div>
+	                        <div class="row p-0">
+		                        <div class="col-md-4 m-0 p-3 text-center blogo" style="background-color: #106e88"> 
+		                        	<a href="#" class="ahref">Log</a>
+		                        </div>
+		                        <div class="col-md-8 m-0 p-3 text-center bLogoText" style="background-color: #20819c">
+		                        	<a href="#" class="ahref"><u>Задать вопрос</u></a>
+		                        </div>
+	                       	 </div>
+	                        	<div class="row p-0">
+	                        	<h7>
+	                        		Вы должны войти или зарегистрироваться на сайте, для того чтобы написать публикатору<br>
+	                        	</h7>
+	                        </div>
+	                        <div class="row pt-2">
+	                        	<a href="#"> Sign in &nbsp;&nbsp;</a>
+	                        	<a href="#"> Registration</a>
+	                        </div>
+	                        <div class="row text-center">
+	                        	<h4 class="p-2" style="font-weight: bold; color: #106e9b; font-family: Georgia, serif;">
+	                        		ПОХОЖИЕ ОБЪЯВЛЕНИЯ
+	                        	</h4>
+	                        	<div class="border">
+	                        		<div class="block">
+	                        			<img src="img/1.jpg" class="block__img">
+	                        		</div>
+	                        		<h3>
+	                        			dgdgsg
+	                        		</h3>
+	                        	</div>
+	                        </div>
+                        </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </div>
+</div>
+	<script src="js/jquery-3.3.1.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/main.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+
+	<script type="text/javascript">
+		$('.sl').slick({
+		  slidesToShow: 1,
+		  slidesToScroll: 1,
+		  arrows: false,
+		  fade: true,
+		  asNavFor: '.sl_nav'
+		});
+		$('.sl_nav').slick({
+		  slidesToShow: 3,
+		  slidesToScroll: 1,
+		  asNavFor: '.slider-for',
+		  dots: true,
+		  centerMode: true,
+		  focusOnSelect: true
+		});
+
+	</script>
+</body>
+</html>
